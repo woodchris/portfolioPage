@@ -5,12 +5,17 @@ html, body {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+:root {
+  --main-bg-color: #6363ce;
+}
+
   
 .header {
     display: flex;
     list-style: none;
     cursor: pointer;
-    background-color: #6363ce;
+    background-color: var(--main-bg-color);
     font-size: 1em;
     border-radius: 4px;
     border: 1px solid #11659c;
@@ -65,7 +70,7 @@ h4 {
 #navbar {
   overflow: hidden;
   z-index: 1;
-  background-color: #6363ce;
+  background-color: var(--main-bg-color);
   text-align: center;
 }
   
@@ -226,7 +231,7 @@ footer {
   display: flex;
   justify-content: center;
   color: white;
-  background-color: #6363ce;
+  background-color: var(--main-bg-color);
   clear: both;
   position: absolute;
   text-align: center;
